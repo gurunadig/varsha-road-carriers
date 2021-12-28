@@ -8,8 +8,10 @@
 <title>Contact US</title>
 <link rel="preconnect" href="https://fonts.gstatic.com/" />
 <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&amp;family=Rubik:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&amp;display=swap" rel="stylesheet" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/fontawesome.min.css" integrity="sha512-r9kUVFtJ0e+8WIL8sjTUlHGbTLwlOClXhVqGgu4sb7ILdkBvM2uI+n/Fz3FN8u3VqJX7l9HLiXqXxkx2mZpkvQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="assets/css/vendor.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/animate.css">
 <link href="assets/css/style.css" rel="stylesheet" />
 <link href="assets/css/main.css" rel="stylesheet" />
 </head>
@@ -43,6 +45,7 @@
         <li class="nav-item has-dropdown"><a class="dropdown-toggle" href="#" data-toggle="dropdown"><span>company</span></a>
         <ul class="dropdown-menu">
         <li class="nav-item"><a href="page-about.html"><span>about us</span></a></li>
+        <li class="nav-item"><a href="our-projects.html"><span>Our Projects</span></a></li>
         <li class="nav-item"><a href="page-awards.html"><span>awards &amp; recognition</span></a></li>
         </ul>
         </li>
@@ -75,7 +78,7 @@
 </nav>
 </header>
 
-<section class="map map-2 mt-5">
+<section class="map map-2 mt-5 wow fadeInDown">
     <iframe class="map-gray map-gray" 
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.3009804045855!2d77.57758281348377!3d12.952582390868367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae15e8d76b702b%3A0x7f4d3d667ee79602!2sVarsha%20Road%20Carriers!5e0!3m2!1sen!2sin!4v1640272299845!5m2!1sen!2sin" width="600" height="450" style="border:0" loading="lazy"> </iframe>
 
@@ -87,7 +90,7 @@
 <div class="col-12 col-lg-4">
 <div class="row">
 <div class="col-12 col-sm-6 col-lg-12">
-<div class="contact-details">
+<div class="contact-details wow fadeInUp">
 <h6>contact details</h6>
 <ul class="list-unstyled info">
     <li><span class="fas fa-map-marker-alt"></span><a href="#">Varsha Road Carriers</a></li>
@@ -97,7 +100,7 @@
 </div>
 </div>
 <div class="col-12 col-sm-6 col-lg-12">
-<div class="opening-hours">
+<div class="opening-hours wow fadeInUp">
 <h6>opening hours</h6>
 <ul class="list-unstyled">
 <li> <span>Monday-friday</span><span>10:00 - 18:00</span></li>
@@ -108,7 +111,7 @@
 </div>
 </div>
 </div>
-<div class="col-12 col-lg-8">
+<div class="col-12 col-lg-8 wow fadeInUp">
 <form class="contactForm" method="post" action="https://demo.zytheme.com/equita/assets/php/contact.php">
 <div class="row">
 <div class="col-12 col-lg-4">
@@ -134,15 +137,18 @@
 </div>
 
 </section>
-<footer class="footer footer-1">
+
+
+
+<footer class="footer footer-1 ">
 
 
     <div class="footer-center">
     <div class="container">
-    <div class="row">
+    <div class="row  wow fadeInUp">
     <div class="col-sm-6 col-md-6 col-lg-3 footer-widget widget-about bord">
         <img class="img-fluid bitleft" src="assets/images/logo/logo_footer.png" alt="logo" />
-        <br>
+        <br> 
         <br>
     <div class="footer-widget-title">
     </div>
@@ -150,13 +156,13 @@
     <div class="footer-logo">
     </div>
     <div class="module module-social">
-        <a class="share-facebook" href="javascript:void(0)">
+        <a class="share-facebook" href="https://www.facebook.com/Varsha-Road-Transport-100729455824091">
             <i class="fab fa-facebook-f"> </i>
         </a>
-            <a class="share-instagram" href="javascript:void(0)">
+            <a class="share-instagram" href="https://www.instagram.com/VarshaRoadCarriers">
                 <i class="fab fa-instagram"></i>
             </a>
-                <a class="share-twitter" href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+                <a class="share-twitter" href="https://www.linkedin.com/company/varsha-road-carriers"><i class="fab fa-linkedin"></i></a>
     </div>
     
     </div>
@@ -228,7 +234,14 @@
 <script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/vendor/jquery-3.4.1.min.js"></script>
 <script src="assets/js/vendor.min.js"></script>
 <script src="assets/js/functions.js"></script>
+<script src="https://player.vimeo.com/api/player.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script>
+var wow = new WOW({
+        offset:100,        
+        mobile:false       
+    });
+    wow.init();
+</script>
 </body>
-
-<!-- Mirrored from demo.zytheme.com/equita/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 13 Dec 2021 14:10:53 GMT -->
 </html>
